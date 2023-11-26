@@ -16,15 +16,17 @@ public class Menu {
     private String foto;
     private Double costo;
     private Boolean estatus;
+    private int quantity;
 
     public Menu() {
     }
 
-    public Menu(Integer idReceta, String foto, Double costo, Boolean estatus) {
+    public Menu(Integer idReceta, String foto, Double costo, Boolean estatus, int quantity) {
         this.idReceta = idReceta;
         this.foto = foto;
         this.costo = costo;
         this.estatus = estatus;
+        this.quantity = quantity;
     }
 
     public Integer getIdMenu() {
@@ -42,6 +44,7 @@ public class Menu {
     public void setIdReceta(Integer idReceta) {
         this.idReceta = idReceta;
     }
+    
 
     public String getFoto() {
         return foto;
@@ -66,4 +69,14 @@ public class Menu {
     public void setEstatus(Boolean estatus) {
         this.estatus = estatus;
     }
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+    
+    
 }
